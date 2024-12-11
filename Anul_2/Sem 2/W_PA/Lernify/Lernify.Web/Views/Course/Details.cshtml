@@ -1,0 +1,103 @@
+﻿@model Lernify.Web.Models.CourseModel
+@{
+     ViewBag.Title = "Details";
+}
+
+
+<section>
+     <div class="container d-flex justify-content-center" data-aos="fade-up">
+          <div class="col-md-8 mt-5">
+               <h2>Details for @Model.Name</h2>
+
+               <div class="form-group mt-3">
+                    @Html.TextBoxFor(m => m.ImageUrl, new
+                    {
+	                    placeholder = "Profile Image Url",
+	                    title = "Select Course's image",
+	                    name = "image",
+	                    id = "image",
+	                    @class = "form-control",
+	                    @readonly = "readonly"
+                    })
+               </div>
+
+               <div class="row mt-3">
+                    <div class="col-md-6 form-group">
+                         @Html.TextBoxFor(m => m.Name, new
+                         {
+	                         placeholder = "Course Name",
+	                         title = "Enter Course name",
+	                         name = "name",
+	                         id = "name",
+	                         @class = "form-control",
+	                         @readonly = "readonly"
+                         })
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                         @Html.TextBoxFor(m => m.Teacher, new
+                         {
+	                         placeholder = "Teachers Name",
+	                         title = "Enter Teacher's  name",
+	                         name = "name",
+	                         id = "name",
+	                         @class = "form-control",
+	                         @readonly = "readonly"
+                         })
+                    </div>
+               </div>
+               <div class="form-group mt-3">
+                    @Html.TextBoxFor(m => m.Lectures, new
+                    {
+	                    placeholder = "Lectures",
+	                    title = "Enter number of lectures",
+	                    name = "lectures",
+	                    id = "lectures",
+	                    @class = "form-control",
+	                    @readonly = "readonly"
+                    })
+               </div>
+               <div class="form-group mt-3">
+                    @Html.TextBoxFor(m => m.Language, new
+                    {
+	                    placeholder = "Language",
+	                    title = "Enter course language",
+	                    name = "language",
+	                    id = "language",
+	                    @class = "form-control",
+	                    @readonly = "readonly"
+                    })
+               </div>
+
+               <div class="form-group mt-3">
+                    @Html.TextBoxFor(m => m.Price, new
+                    {
+	                    placeholder = "Price",
+	                    title = "Enter course's price",
+	                    name = "price",
+	                    id = "price",
+	                    @class = "form-control",
+	                    @readonly = "readonly"
+                    })
+               </div>
+               <div class="form-group mt-3">
+                    @Html.TextAreaFor(m => m.Description, new
+                    {
+	                    placeholder = "Description",
+	                    title = "Enter course's information",
+	                    name = "description",
+	                    id = "description",
+	                    @rows = "5",
+	                    @class = "form-control",
+	                    @readonly = "readonly"
+                    })
+               </div>
+               <div class="form-group mt-3">
+                    <a class="btn btn-outline-success float-end" href=@Url.Action("Edit", "Course", new { id = Model.Id })>Edit Info</a>
+                    <a class="btn btn-outline-secondary" href=@Url.Action("Index")>Course List</a>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+

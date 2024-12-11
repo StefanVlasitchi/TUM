@@ -1,0 +1,7 @@
+AMS aplicatiei VS
+- scopul/sarcina
+- scopul VS (functii utilizare 1.5), in use case
+- consideratii teroetice
+- 4-5 use case despre
+- screenshot
+- conc/bibiografie

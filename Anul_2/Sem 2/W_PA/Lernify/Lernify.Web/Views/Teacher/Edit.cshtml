@@ -1,0 +1,100 @@
+﻿@model Lernify.Web.Models.TeacherModel
+@{
+     ViewBag.Title = "Update";
+}
+<section>
+     <div class="container d-flex justify-content-center" data-aos="fade-up">
+          <div class="col-md-8 mt-5">
+               <h2>Update Teacher Information</h2>
+               @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+               @using (Html.BeginForm("Edit", "Teacher", FormMethod.Post, new { @id = "CourseForm " }))
+               {
+                    <div class="form-group mt-3">
+                         @Html.TextBoxFor(m => m.ImageUrl, new
+                         {
+                              placeholder = "Profile Image Url",
+                              title = "Select Course's image",
+                              name = "image",
+                              id = "image",
+                              @class = "form-control"
+                         })
+                         @Html.ValidationMessageFor(m => m.ImageUrl, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="row mt-3">
+                         <div class="col-md-6 form-group">
+                              @Html.TextBoxFor(m => m.FirstName, new
+                              {
+                                   placeholder = "Course Name",
+                                   title = "Enter Course name",
+                                   name = "name",
+                                   id = "name",
+                                   @class = "form-control"
+                              })
+                              @Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "text-danger" })
+                         </div>
+                         <div class="col-md-6 form-group mt-3 mt-md-0">
+                              @Html.TextBoxFor(m => m.LastName, new
+                              {
+                                   placeholder = "Teachers Name",
+                                   title = "Enter Teacher's  name",
+                                   name = "name",
+                                   id = "name",
+                                   @class = "form-control"
+                              })
+                              @Html.ValidationMessageFor(m => m.LastName, "", new { @class = "text-danger" })
+                         </div>
+                    </div>
+                    <div class="form-group mt-3">
+                         @Html.TextBoxFor(m => m.Mail, new
+                         {
+                              placeholder = "mail",
+                              title = "Enter number of lectures",
+                              name = "mail",
+                              id = "mail",
+                              @class = "form-control"
+                         })
+                         @Html.ValidationMessageFor(m => m.Mail, "", new { @class = "text-danger" })
+                    </div>
+	               <div class="form-group mt-3">
+		               @Html.LabelFor(m => m.Role, new { @class = "control-label" })
+                         <div class="radio">
+                              <label>
+                                   @Html.RadioButtonFor(m => m.Role, "Designer") Designer
+                              </label>
+                              <label>
+                                   @Html.RadioButtonFor(m => m.Role, "COFounder") COFounder
+                              </label>  <label>
+                                   @Html.RadioButtonFor(m => m.Role, "WebDeveloper") WebDeveloper
+                              </label>  <label>
+                                   @Html.RadioButtonFor(m => m.Role, "Engineer") Engineer
+	                         </label>  <label>
+		                         @Html.RadioButtonFor(m => m.Role, "Marketer") Marketer
+	                         </label>
+
+                         </div>
+		               @Html.ValidationMessageFor(m => m.Role, "", new { @class = "text-danger" })
+	               </div>
+
+                
+                    <div class="form-group mt-3">
+                         @Html.TextAreaFor(m => m.Description, new
+                         {
+                             placeholder = "Description",
+                             title = "Enter employee's information",
+                             name = "description",
+                             id = "description",
+                             @rows = "5",
+                             @class = "form-control"
+                         })
+                         @Html.ValidationMessageFor(m => m.Description, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group mt-3">
+                         <input type="submit" value="Update" class="btn btn-golden float-end" />
+                         <a class="btn btn-outline-secondary" href=@Url.Action("Index")>Teacher List</a>
+                    </div>
+               }
+          </div>
+     </div>
+</section>
+

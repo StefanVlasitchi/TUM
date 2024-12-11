@@ -1,0 +1,6 @@
+D:\Universitate\Anul 2\Sem 2\TW\Proiect An\Learnify\Learnify.Helpers\bin\Debug\Learnify.Helpers.dll
+D:\Universitate\Anul 2\Sem 2\TW\Proiect An\Learnify\Learnify.Helpers\bin\Debug\Learnify.Helpers.pdb
+D:\Universitate\Anul 2\Sem 2\TW\Proiect An\Learnify\Learnify.Helpers\obj\Debug\Learnify.Helpers.csproj.AssemblyReference.cache
+D:\Universitate\Anul 2\Sem 2\TW\Proiect An\Learnify\Learnify.Helpers\obj\Debug\Learnify.Helpers.csproj.CoreCompileInputs.cache
+D:\Universitate\Anul 2\Sem 2\TW\Proiect An\Learnify\Learnify.Helpers\obj\Debug\Learnify.Helpers.dll
+D:\Universitate\Anul 2\Sem 2\TW\Proiect An\Learnify\Learnify.Helpers\obj\Debug\Learnify.Helpers.pdb

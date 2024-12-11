@@ -1,0 +1,16 @@
+{
+	"folders": [],
+	"settings": {
+		"files.associations": {
+			"random": "cpp",
+			"iostream": "cpp",
+			"array": "cpp",
+			"deque": "cpp",
+			"string": "cpp",
+			"unordered_map": "cpp",
+			"vector": "cpp",
+			"iterator": "cpp",
+			"string_view": "cpp"
+		}
+	}
+}

@@ -1,0 +1,77 @@
+﻿@using System.Web.Optimization
+@using System.Security.Policy
+@using Lernify.Domain.Enums
+@model Lernify.Web.Models.ReviewModel
+
+@{
+	ViewBag.Title = "Reviews";
+}
+
+<section id="contact" class="contact ">
+     <div class="container" data-aos="fade-up">
+
+
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+               <h2 align="center">Leave a Review</h2>
+               @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+               @using (Html.BeginForm("Index", "Review", FormMethod.Post, new { @id = "ReviewForm" }))
+               {
+                    <div class="row">
+                         <div class="col-md-6 form-group">
+                              @Html.TextBoxFor(m => m.Name, new
+                         {
+                             placeholder = "Enter Your Name",
+                             title = "Please Enter Your Full Name",
+                             name = "name",
+                             id = "name",
+                             @class = "form-control",
+                         })
+                              @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+                         </div>
+                         <div class="col-md-6 form-group mt-3 mt-md-0">
+                              @Html.TextBoxFor(m => m.Email, new
+                              {
+                                  placeholder = "Your Email",
+                                  title = "Please Enter Your Email",
+                                  name = "email",
+                                  id = "email",
+                                  @class = "form-control",
+                              })
+                              @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                         </div>
+                    </div>
+                    <div class="form-group mt-3">
+                         @Html.TextBoxFor(m => m.Title, new
+                         {
+                             placeholder = "Subject",
+                             title = "Please Enter the Subject",
+                             name = "subject",
+                             id = "subject",
+                             @class = "form-control"
+                         })
+                         @Html.ValidationMessageFor(m => m.Title, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group mt-3">
+                         @Html.TextAreaFor(m => m.Message, new
+                         {
+                             placeholder = "Review",
+                             title = "Enter your review there",
+                             name = "message",
+                             id = "message",
+                             rows = "5",
+                             @class = "form-control"
+                         })
+                         @Html.ValidationMessageFor(m => m.Message, "", new { @class = "text-danger" })
+                         <span class="help-block small">Min: 30 / Max:500</span>
+                    </div>
+                    <div class="text-center php-email-form">
+                         <button type="submit">Send Review</button>
+                    </div>
+               }
+          </div>
+
+     </div>
+
+
+</section>

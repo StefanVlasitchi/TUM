@@ -1,0 +1,56 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <meta http-equiv="x-ua-compatible" content="ie=edge">
+     <meta name="description" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Place favicon.ico in the root directory -->
+     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+     <title>Lernify | @ViewBag.Title </title>
+
+     @Styles.Render("~/bundles/animate/css")
+     @Styles.Render("~/bundles/backToTop/css")
+     @Styles.Render("~/bundles/bootstrap/css")
+     @Styles.Render("~/bundles/default/css")
+     @Styles.Render("~/bundles/elegantFont/css")
+     @Styles.Render("~/bundles/fontAwesome5Pro/css")
+     @Styles.Render("~/bundles/jquery.fancybox/css")
+     @Styles.Render("~/bundles/meanmenu/css")
+     @Styles.Render("~/bundles/owl.carousel/css")
+     @Styles.Render("~/bundles/preloader/css")
+
+     @Styles.Render("~/bundles/swiper-bundles/css")
+
+     @if (IsSectionDefined("Styles"))
+     {@RenderSection("styles", required: false)}
+
+     @Styles.Render("~/bundles/style/css")
+
+</head>
+<body>
+
+          <main>
+               @RenderBody()
+          </main>
+
+
+     @Scripts.Render("~/bundles/jquery-3.5.1/js")
+     @Scripts.Render("~/bundles/waypoints/js")
+     @Scripts.Render("~/bundles/bootstrap.bundle/js")
+     @Scripts.Render("~/bundles/jquery.meanmenu/js")
+     @Scripts.Render("~/bundles/swiper-bundle/js")
+     @Scripts.Render("~/bundles/owl.carousel/js")
+     @Scripts.Render("~/bundles/jquery.fancybox/js")
+     @Scripts.Render("~/bundles/isotope.pkgd/js")
+     @Scripts.Render("~/bundles/parallax/js")
+     @Scripts.Render("~/bundles/backToTop/js")
+     @Scripts.Render("~/bundles/purecounter/js")
+     @Scripts.Render("~/bundles/ajax-form/js")
+     @Scripts.Render("~/bundles/wow/js")
+     @Scripts.Render("~/bundles/imagesloaded.pkgd/js")
+     @Scripts.Render("~/bundles/main/js")
+
+</body>
+</html>

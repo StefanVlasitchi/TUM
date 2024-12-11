@@ -1,0 +1,91 @@
+﻿@{
+     ViewBag.Title = "UserPage";
+}
+@model Lernify.Web.Models.UserData
+
+<section>
+     <div class="container" style="margin-top: 2em; margin-bottom: 23.85em;">
+          <div class="row">
+               <div class="col-md-3">
+                    <div class="menu">
+                         <ul>
+                              <li><a href="@Url.Action("Index", "User")">My Account</a></li>
+                              <li><a class="get-started-btn scrollto" href="@Url.Action("EnrolledCourses", "User", new {userId = Model.Id})">My Chart</a></li>
+                            
+                         </ul>
+                    </div>
+               </div>
+               <div class="col-md-9">
+                    <h1>@Html.DisplayFor(u => u.Level) Details</h1>
+                    <div class="user-details">
+                         <p><strong>Name:</strong> @Html.DisplayFor(u => u.Username)   #@Html.DisplayFor(u => u.Id)</p>
+                         <p><strong>Email:</strong> @Html.DisplayFor(u => u.Email)</p>
+                         <p><strong>Status:</strong> @Html.DisplayFor(u => u.Level)</p>
+                    </div>
+                    <div class="logout-btn">
+                         <a class="get-started-btn scrollto" href="@Url.Action("Logout", "User")">Logout</a>
+                    </div>
+               </div>
+          </div>
+     </div>
+</section>
+
+<style>
+     .container {
+          text-align: center;
+     }
+
+     .user-details {
+          margin-bottom: 2em;
+     }
+
+          .user-details p {
+               margin-bottom: 1em;
+          }
+
+     .logout-btn {
+          margin-top: 2em;
+     }
+
+     .get-started-btn {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #e91e63;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 4px;
+          transition: background-color 0.3s ease;
+     }
+
+          .get-started-btn:hover {
+               background-color: #c2185b;
+          }
+
+     .menu {
+          text-align: left;
+     }
+
+          .menu ul {
+               list-style: none;
+               padding: 0;
+               margin: 0;
+          }
+
+               .menu ul li {
+                    margin-bottom: 1em;
+               }
+
+                    .menu ul li a {
+                         display: block;
+                         padding: 10px;
+                         background-color: #f5f5f5;
+                         border-radius: 4px;
+                         color: #333;
+                         text-decoration: none;
+                         transition: background-color 0.3s ease;
+                    }
+
+                         .menu ul li a:hover {
+                              background-color: #e5e5e5;
+                         }
+</style>

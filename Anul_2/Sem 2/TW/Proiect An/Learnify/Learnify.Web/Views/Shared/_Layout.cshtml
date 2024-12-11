@@ -1,0 +1,84 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+     <title>@ViewBag.Title | Learnify</title>
+
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+     <!-- Vendor CSS Files -->
+     @Styles.Render("~/bundles/bootstrap/css")
+     @Styles.Render("~/bundles/icomoon/css")
+     @Styles.Render("~/bundles/remixicon/css")
+     @Styles.Render("~/bundles/magnifypopup/css")
+     @Styles.Render("~/bundles/odometer/css")
+     @Styles.Render("~/bundles/lightbox/css")
+     @Styles.Render("~/bundles/animation/css")
+
+
+     @Styles.Render("~/bundles/jqueru-ui/css")
+     @Styles.Render("~/bundles/swiper-bundle/css")
+     @Styles.Render("~/bundles/tipped/css")
+
+
+     @if (IsSectionDefined("Styles"))
+     {@RenderSection("styles", required: false)}
+
+
+     <!-- Template Main CSS File -->
+     @Styles.Render("~/bundles/app/css")
+</head>
+
+<body>
+
+     <!-- ======= Header ======= -->
+     <header id="header" class="fixed-top">
+           @Html.Partial("_Header") 
+
+
+     </header><!-- End Header -->
+
+     <main id="main-wrapper" class="content">
+	     @RenderBody()
+
+     </main><!-- End #main -->
+
+     <div id="preloader"></div>
+     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+     <!-- Vendor JS Files -->
+     @*@Scripts.Render("~/bundles/backtotop/js")*@
+     @Scripts.Render("~/bundles/bootstrap/h=js")
+     @Scripts.Render("~/bundles/imageloaded/js")
+     @Scripts.Render("~/bundles/isotop/js")
+     @*@Scripts.Render("~/bundles/jquery-ui/js")*@
+     @*@Scripts.Render("~/bundles/jquery.countdown/js")*@
+     @*@Scripts.Render("~/bundles/isInViewport.jquery/js")*@
+     @Scripts.Render("~/bundles/lightbox/js")
+     @*@Scripts.Render("~/bundles/magnifypopup/js")*@
+     @Scripts.Render("~/bundles/modernizr/js")
+     @Scripts.Render("~/bundles/odometer/js")
+     @*@Scripts.Render("~/bundles/paralax-scroll/js")*@
+     @Scripts.Render("~/bundles/paralax/js")
+     @Scripts.Render("~/bundles/smooth-scroll/js")
+     @Scripts.Render("~/bundles/svg-inject.min/js")
+     @*@Scripts.Render("~/bundles/tipped/js")*@
+     @Scripts.Render("~/bundles/vivus/js")
+     @Scripts.Render("~/bundles/sal/js")
+     
+    
+     @Scripts.Render("~/bundles/jquery/js")
+
+     <!-- Template Main JS File -->
+     
+
+     @RenderSection("Scripts", required: false)
+
+</body>
+
+</html>

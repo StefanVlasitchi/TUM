@@ -1,0 +1,171 @@
+﻿@{
+     Layout = "~/Views/Shared/_Layout_Blanck.cshtml";
+     ViewBag.Title = "Register";
+}
+
+@using System.Web.Optimization
+@model Lernify.Web.Models.UserRegister
+
+<div class="container-center">
+     <div class="view-header">
+          <div class="header-icon">
+               <i class="pe pe-7s-unlock"></i>
+          </div>
+          <div class="header-title">
+               <h3>Register</h3>
+               <small>
+                    Please fill in the form to register.
+               </small>
+          </div>
+     </div>
+
+     <div class="panel panel-filled">
+          <div class="panel-body">
+               @Html.ValidationSummary(false)
+               @using (Html.BeginForm("Index", "Register", FormMethod.Post, new { @id = "RegisterForm" }))
+               {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-group">
+                         @Html.LabelFor(m => m.Username, new { @class = "control-label" })
+                         @Html.TextBoxFor(m => m.Username, new
+                         {
+                             placeholder = "Username",
+                             title = "Please enter a username",
+                             @class = "form-control",
+                             required = "required"
+                         })
+                         <span class="help-block small">Your unique username for the app</span>
+                    </div>
+
+                    <div class="form-group">
+                         @Html.LabelFor(m => m.Email, new { @class = "control-label" })
+                         @Html.TextBoxFor(m => m.Email, new
+                         {
+                             placeholder = "example@gmail.com",
+                             title = "Please enter your email",
+                             @class = "form-control",
+                             required = "required",
+                             type = "email"
+                         })
+                         <span class="help-block small">A valid email address</span>
+                    </div>
+
+                    <div class="form-group">
+                         @Html.LabelFor(m => m.Password, new { @class = "control-label" })
+                         @Html.PasswordFor(m => m.Password, new
+                         {
+                             @class = "form-control",
+                             title = "Please enter your password",
+                             placeholder = "******",
+                             required = "required"
+                         })
+                         <span class="help-block small">Your strong password</span>
+                    </div>
+
+                    <div class="form-group">
+                         @Html.LabelFor(m => m.ConfirmPassword, new { @class = "control-label" })
+                         @Html.PasswordFor(m => m.ConfirmPassword, new
+                         {
+                             @class = "form-control",
+                             title = "Please confirm your password",
+                             placeholder = "******",
+                             required = "required"
+                         })
+                         <span class="help-block small">Confirm your password</span>
+                    </div>
+
+                    <div class="form-group">
+                         <button type="submit" class="btn btn-accent">Register</button>
+                         <a class="btn btn-default" href="@Url.Action("Index", "Login")">Login</a>
+                         <a class="btn btn-sm btn-default" href="@Url.Action("Index", "Home")">
+                              <i class="fas fa-home"></i> Home
+                         </a>
+                    </div>
+               }
+          </div>
+     </div>
+</div>
+
+<style>
+	.container-center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+
+	.view-header {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.header-icon {
+		font-size: 48px;
+		margin-bottom: 10px;
+	}
+
+	.panel {
+		border-radius: 6px;
+		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+	}
+
+	.panel-body {
+		padding: 40px;
+	}
+
+	.form-group {
+		margin-bottom: 20px;
+	}
+
+	.form-group .control-label {
+		font-weight: bold;
+	}
+
+	.form-control {
+		border-radius: 4px;
+		border: 1px solid #ddd;
+		padding: 10px;
+		font-size: 14px;
+	}
+
+	.help-block {
+		color: #999;
+		font-size: 12px;
+		margin-top: 5px;
+	}
+
+	.btn {
+		border-radius: 4px;
+		padding: 10px 20px;
+		font-size: 14px;
+		text-decoration: none;
+		cursor: pointer;
+		transition: all 0.3s ease;
+	}
+
+	.btn-accent {
+		background-color: #5cb85c;
+		border: none;
+		color: #fff;
+	}
+
+	.btn-accent:hover {
+		background-color: #449d44;
+	}
+
+	.btn-default {
+		background-color: #eee;
+		border: none;
+		color: #333;
+	}
+
+	.btn-default:hover {
+		background-color: #ccc;
+	}
+
+	.btn-sm {
+		font-size: 12px;
+		padding: 5px 10px;
+	}
+</style>

@@ -1,0 +1,98 @@
+﻿@model Lernify.Web.Models.TeacherModel
+@{
+     ViewBag.Title = "Delete";
+}
+
+<section>
+     <div class="container d-flex justify-content-center" data-aos="fade-up">
+          <div class="col-md-8 mt-5">
+               <h2>Delete Confirmation for @Model.FirstName</h2>
+
+               <div class="form-group mt-3">
+                    @Html.TextBoxFor(m => m.ImageUrl, new
+               {
+                    placeholder = "Profile Image Url",
+                    title = "Select profile's image",
+                    name = "image",
+                    id = "image",
+                    @class = "form-control",
+                    @readonly = "readonly"
+               })
+               </div>
+
+               <div class="row mt-3">
+                    <div class="col-md-6 form-group">
+                         @Html.TextBoxFor(m => m.FirstName, new
+                         {
+                              placeholder = "Teachers first Name",
+                              title = "Enter teachers first Name",
+                              name = "name",
+                              id = "name",
+                              @class = "form-control",
+                              @readonly = "readonly"
+                         })
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                         @Html.TextBoxFor(m => m.LastName, new
+                         {
+
+                              placeholder = "Teachers last name",
+                              title = "Enter teacher's last name",
+                              name = "last name",
+                              id = "last name",
+                              @class = "form-control",
+                              @readonly = "readonly"
+                         })
+                    </div>
+               </div>
+               <div class="form-group mt-3">
+                    @Html.TextBoxFor(m => m.Mail, new
+                    {
+                         placeholder = "Email",
+                         title = "Enter teacher's email",
+                         name = "email",
+                         id = "email",
+                         @class = "form-control",
+                         @readonly = "readonly"
+
+                    })
+               </div>
+	          <div class="form-group mt-3">
+		          @Html.TextBoxFor(m => m.Role, new
+		          {
+			          placeholder = "Teaching Specialty",
+			          title = "Select employee's Teaching Specialty: Manager, Waiter, Barman, Dancer or Dj",
+			          name = "Teaching Specialty",
+			          id = "Teaching Specialty",
+			          @class = "form-control",
+			          @readonly = "readonly"
+		          })
+	          </div>
+
+          
+               <div class="form-group mt-3">
+                    @Html.TextAreaFor(m => m.Description, new
+                    {
+                         placeholder = "Description",
+                         title = "Enter course's information",
+                         name = "description",
+                         id = "description",
+                         @rows = "5",
+                         @class = "form-control",
+                         @readonly = "readonly"
+                    })
+               </div>
+               <div class="form-group mt-3">
+
+                    @using (Html.BeginForm("Delete", "Teacher", FormMethod.Post))
+                    {
+                         @Html.HiddenFor(model => model.Id)
+                         <input type="submit" value="Confirm" class="btn btn-outline-danger float-end" />
+                    }
+                    <a class="btn btn-outline-secondary" href=@Url.Action("Index")>Teacher List</a>
+               </div>
+
+          </div>
+     </div>
+</section>
+

@@ -1,0 +1,64 @@
+﻿@model Lernify.Web.Models.EnrollModel
+
+
+@{
+     ViewBag.Title = "Enroll Course";
+}
+
+
+<section id="event" class="event">
+     <div class="container" date-aos="fade-up">
+          <div class="section-title">
+               <h2>Enroll Course</h2>
+          </div>
+
+          @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+          @using (Html.BeginForm())
+          {
+               @Html.AntiForgeryToken()
+
+     <div class="form-horizontal">
+          @*<h4>@ViewBag.Course.Title</h4>*@
+          <hr />
+          <div class="form-group">
+               @Html.LabelFor(model => model.FullName, htmlAttributes: new { @class = "control-label col-md-2" })
+               <div class="col-md-10">
+                    @Html.EditorFor(model => model.FullName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.FullName, "", new { @class = "text-danger" })
+               </div>
+          </div>
+
+          <div class="form-group">
+               @Html.LabelFor(model => model.CourseName, htmlAttributes: new { @class = "control-label col-md-2" })
+               <div class="col-md-10">
+                    @Html.EditorFor(model => model.CourseName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.CourseName, "", new { @class = "text-danger" })
+               </div>
+          </div>
+
+          <div class="form-group">
+               @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+               <div class="col-md-10">
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+               </div>
+          </div>
+
+
+          @Html.HiddenFor(model => model.CourseId)
+          @Html.HiddenFor(model => model.UserId)
+          <div class="form-group mt-3">
+               <a class="btn btn-outline-secondary" href=@Url.Action("Index")>
+                    <i class="bi bi-arrow-bar-left">Back to Courses</i>
+               </a>
+               <div class="float-end" style="margin-right: 17%">
+                    <input type="submit" value="Buy" class="btn btn-golden" />
+               </div>
+          </div>
+     </div>
+          }
+     </div>
+     <p>
+
+     </p>
+</section>
