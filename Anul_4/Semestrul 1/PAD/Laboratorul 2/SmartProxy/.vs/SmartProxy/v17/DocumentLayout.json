@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\UTM\\Anul_4\\Semestrul 1\\MunMihai Anul4 main Semestrul_7-Programarea_Aplicatiilor_Distribuite (PAD)_Laborator_SmartProxy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD89D93-7336-44D9-92C0-6A4D097C1758}|MovieAPI\\MovieAPI.csproj|d:\\utm\\anul_4\\semestrul 1\\munmihai anul4 main semestrul_7-programarea_aplicatiilor_distribuite (pad)_laborator_smartproxy\\movieapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ADD89D93-7336-44D9-92C0-6A4D097C1758}|MovieAPI\\MovieAPI.csproj|solutionrelative:movieapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB9440A9-961B-45E2-9F59-6876F989A83D}|Proxy\\Proxy.csproj|d:\\utm\\anul_4\\semestrul 1\\munmihai anul4 main semestrul_7-programarea_aplicatiilor_distribuite (pad)_laborator_smartproxy\\proxy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FB9440A9-961B-45E2-9F59-6876F989A83D}|Proxy\\Proxy.csproj|solutionrelative:proxy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB9440A9-961B-45E2-9F59-6876F989A83D}|Proxy\\Proxy.csproj|d:\\utm\\anul_4\\semestrul 1\\munmihai anul4 main semestrul_7-programarea_aplicatiilor_distribuite (pad)_laborator_smartproxy\\proxy\\proxy.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FB9440A9-961B-45E2-9F59-6876F989A83D}|Proxy\\Proxy.csproj|solutionrelative:proxy\\proxy.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\UTM\\Anul_4\\Semestrul 1\\MunMihai Anul4 main Semestrul_7-Programarea_Aplicatiilor_Distribuite (PAD)_Laborator_SmartProxy\\Proxy\\appsettings.json",
+              "RelativeDocumentMoniker": "Proxy\\appsettings.json",
+              "ToolTip": "D:\\UTM\\Anul_4\\Semestrul 1\\MunMihai Anul4 main Semestrul_7-Programarea_Aplicatiilor_Distribuite (PAD)_Laborator_SmartProxy\\Proxy\\appsettings.json",
+              "RelativeToolTip": "Proxy\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-25T13:39:24.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Proxy.csproj",
+              "DocumentMoniker": "D:\\UTM\\Anul_4\\Semestrul 1\\MunMihai Anul4 main Semestrul_7-Programarea_Aplicatiilor_Distribuite (PAD)_Laborator_SmartProxy\\Proxy\\Proxy.csproj",
+              "RelativeDocumentMoniker": "Proxy\\Proxy.csproj",
+              "ToolTip": "D:\\UTM\\Anul_4\\Semestrul 1\\MunMihai Anul4 main Semestrul_7-Programarea_Aplicatiilor_Distribuite (PAD)_Laborator_SmartProxy\\Proxy\\Proxy.csproj",
+              "RelativeToolTip": "Proxy\\Proxy.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-25T13:37:27.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\UTM\\Anul_4\\Semestrul 1\\MunMihai Anul4 main Semestrul_7-Programarea_Aplicatiilor_Distribuite (PAD)_Laborator_SmartProxy\\MovieAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "MovieAPI\\appsettings.json",
+              "ToolTip": "D:\\UTM\\Anul_4\\Semestrul 1\\MunMihai Anul4 main Semestrul_7-Programarea_Aplicatiilor_Distribuite (PAD)_Laborator_SmartProxy\\MovieAPI\\appsettings.json",
+              "RelativeToolTip": "MovieAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-25T13:36:58.773Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

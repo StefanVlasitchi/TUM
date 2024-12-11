@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QUd3CsWgGz8=",
+  "success": true,
+  "projectFilePath": "D:\\Arhiva\\SDA-main\\Message Broker\\Broker\\Broker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Steven\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
