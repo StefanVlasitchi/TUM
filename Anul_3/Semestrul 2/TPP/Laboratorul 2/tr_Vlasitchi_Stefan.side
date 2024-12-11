@@ -1,0 +1,462 @@
+{
+  "id": "5b3f5890-5f6f-4846-8e28-379a249350d8",
+  "version": "2.0",
+  "name": "Laboratorul 2",
+  "url": "https://www.calculator.net/investment-calculator.html",
+  "tests": [{
+    "id": "8edc8904-3d18-4471-af42-2d0e30007e68",
+    "name": "tr_Vlasitchi_Stefan",
+    "commands": [{
+      "id": "c4a78fb8-110c-4d79-887b-a0cf43426ac8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/investment-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a387357-9772-4d92-915b-04cc2b25dcfe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "976x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d56bc70-0ddc-4278-b496-1cffabe32abb",
+      "comment": "",
+      "command": "click",
+      "target": "id=cstartingprinciplev",
+      "targets": [
+        ["id=cstartingprinciplev", "id"],
+        ["name=cstartingprinciplev", "name"],
+        ["css=#cstartingprinciplev", "css:finder"],
+        ["xpath=//input[@id='cstartingprinciplev']", "xpath:attributes"],
+        ["xpath=//table[@id='cstartingamount']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c7fc7e5-82a2-4b60-95b9-45f2d4bb14ca",
+      "comment": "",
+      "command": "type",
+      "target": "id=cstartingprinciplev",
+      "targets": [
+        ["id=cstartingprinciplev", "id"],
+        ["name=cstartingprinciplev", "name"],
+        ["css=#cstartingprinciplev", "css:finder"],
+        ["xpath=//input[@id='cstartingprinciplev']", "xpath:attributes"],
+        ["xpath=//table[@id='cstartingamount']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "545"
+    }, {
+      "id": "777f446e-3862-4289-8e0d-10f17e495cda",
+      "comment": "",
+      "command": "click",
+      "target": "id=cyearsv",
+      "targets": [
+        ["id=cyearsv", "id"],
+        ["name=cyearsv", "name"],
+        ["css=#cyearsv", "css:finder"],
+        ["xpath=//input[@id='cyearsv']", "xpath:attributes"],
+        ["xpath=//table[@id='cinvestlength']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5356df8f-c2b6-40ac-bb79-970127f712ef",
+      "comment": "",
+      "command": "type",
+      "target": "id=cyearsv",
+      "targets": [
+        ["id=cyearsv", "id"],
+        ["name=cyearsv", "name"],
+        ["css=#cyearsv", "css:finder"],
+        ["xpath=//input[@id='cyearsv']", "xpath:attributes"],
+        ["xpath=//table[@id='cinvestlength']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "5465"
+    }, {
+      "id": "c526d96c-9277-4f2b-94a3-9d377f27d049",
+      "comment": "",
+      "command": "click",
+      "target": "css=#creturnrate tr:nth-child(1)",
+      "targets": [
+        ["css=#creturnrate tr:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='creturnrate']/tbody/tr", "xpath:idRelative"],
+        ["xpath=//table[4]/tbody/tr", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3be8048-dd9d-4b27-bd48-666bd476a97e",
+      "comment": "",
+      "command": "type",
+      "target": "id=cinterestratev",
+      "targets": [
+        ["id=cinterestratev", "id"],
+        ["name=cinterestratev", "name"],
+        ["css=#cinterestratev", "css:finder"],
+        ["xpath=//input[@id='cinterestratev']", "xpath:attributes"],
+        ["xpath=//table[@id='creturnrate']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[4]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "25"
+    }, {
+      "id": "b867d7b6-168e-4911-8be3-ab344d5d374a",
+      "comment": "",
+      "command": "click",
+      "target": "id=ccompound",
+      "targets": [
+        ["id=ccompound", "id"],
+        ["name=ccompound", "name"],
+        ["css=#ccompound", "css:finder"],
+        ["xpath=//select[@id='ccompound']", "xpath:attributes"],
+        ["xpath=//table[@id='creturnrate']/tbody/tr[2]/td[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b85fb340-de6b-48e5-bae3-de57b1f7a7e9",
+      "comment": "",
+      "command": "select",
+      "target": "id=ccompound",
+      "targets": [],
+      "value": "label=quarterly"
+    }, {
+      "id": "1040d6af-8418-4683-a3e5-61c7bbf3da7c",
+      "comment": "",
+      "command": "click",
+      "target": "id=ccontributeamountv",
+      "targets": [
+        ["id=ccontributeamountv", "id"],
+        ["name=ccontributeamountv", "name"],
+        ["css=#ccontributeamountv", "css:finder"],
+        ["xpath=//input[@id='ccontributeamountv']", "xpath:attributes"],
+        ["xpath=//table[@id='ccontributeamount']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[5]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a9055a3-6809-4681-b610-2bf4a1b8bdbe",
+      "comment": "",
+      "command": "type",
+      "target": "id=ccontributeamountv",
+      "targets": [
+        ["id=ccontributeamountv", "id"],
+        ["name=ccontributeamountv", "name"],
+        ["css=#ccontributeamountv", "css:finder"],
+        ["xpath=//input[@id='ccontributeamountv']", "xpath:attributes"],
+        ["xpath=//table[@id='ccontributeamount']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[5]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "5611ae08-7285-4ead-9952-fc0983b4b119",
+      "comment": "",
+      "command": "click",
+      "target": "css=table:nth-child(2) tr:nth-child(2) > td:nth-child(2)",
+      "targets": [
+        ["css=table:nth-child(2) tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td[3]/table/tbody/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//td[3]/table/tbody/tr[2]/td[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "107a2abd-664d-4597-a0aa-0678f0d92693",
+      "comment": "",
+      "command": "click",
+      "target": "css=table:nth-child(2) tr:nth-child(2) > td:nth-child(2)",
+      "targets": [
+        ["css=table:nth-child(2) tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td[3]/table/tbody/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//td[3]/table/tbody/tr[2]/td[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16fdf3ea-2efc-469d-8c76-560e789104bc",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=table:nth-child(2) tr:nth-child(2) > td:nth-child(2)",
+      "targets": [
+        ["css=table:nth-child(2) tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td[3]/table/tbody/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//td[3]/table/tbody/tr[2]/td[2]", "xpath:position"]
+      ],
+      "value": "Starting Amount"
+    }, {
+      "id": "acf6a66d-e924-4d9d-a007-3d04c19bd20a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbcontainer:nth-child(1) > .rbmark",
+      "targets": [
+        ["css=.cbcontainer:nth-child(1) > .rbmark", "css:finder"],
+        ["xpath=//table[@id='cperiod']/tbody/tr/td/label/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0988fa18-6a10-4196-9dcc-a0639676da4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbcontainer:nth-child(5) > .rbmark",
+      "targets": [
+        ["css=.cbcontainer:nth-child(5) > .rbmark", "css:finder"],
+        ["xpath=//table[@id='cperiod']/tbody/tr/td/label[4]/span", "xpath:idRelative"],
+        ["xpath=//label[4]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ec65e63-0a18-44ed-8997-21e8506c55e3",
+      "comment": "",
+      "command": "click",
+      "target": "name=x",
+      "targets": [
+        ["name=x", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='x']", "xpath:attributes"],
+        ["xpath=//table[@id='cperiod']/tbody/tr[2]/td/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ad72b3a9-0452-48ff-8394-24cfcd3dc33e",
+    "name": "tr_Vlasitchi_Stefan_2",
+    "commands": [{
+      "id": "a674fa6d-d096-4436-9403-3d30c5f88283",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/investment-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06af1995-a7f5-4b12-a28d-0ceff603946e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "976x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "916bb9b7-ff51-4be7-8b26-4f69f1e38d3f",
+      "comment": "",
+      "command": "click",
+      "target": "id=cstartingprinciplev",
+      "targets": [
+        ["id=cstartingprinciplev", "id"],
+        ["name=cstartingprinciplev", "name"],
+        ["css=#cstartingprinciplev", "css:finder"],
+        ["xpath=//input[@id='cstartingprinciplev']", "xpath:attributes"],
+        ["xpath=//table[@id='cstartingamount']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5825d2f-3e21-4e5d-9f51-c012f62f29b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=cstartingprinciplev",
+      "targets": [
+        ["id=cstartingprinciplev", "id"],
+        ["name=cstartingprinciplev", "name"],
+        ["css=#cstartingprinciplev", "css:finder"],
+        ["xpath=//input[@id='cstartingprinciplev']", "xpath:attributes"],
+        ["xpath=//table[@id='cstartingamount']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af6706fd-461a-4fa3-a772-2b6a860058d0",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=cstartingprinciplev",
+      "targets": [
+        ["id=cstartingprinciplev", "id"],
+        ["name=cstartingprinciplev", "name"],
+        ["css=#cstartingprinciplev", "css:finder"],
+        ["xpath=//input[@id='cstartingprinciplev']", "xpath:attributes"],
+        ["xpath=//table[@id='cstartingamount']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b043227c-a2f6-48f1-bbad-d2e8cfa373ba",
+      "comment": "",
+      "command": "click",
+      "target": "id=cstartingprinciplev",
+      "targets": [
+        ["id=cstartingprinciplev", "id"],
+        ["name=cstartingprinciplev", "name"],
+        ["css=#cstartingprinciplev", "css:finder"],
+        ["xpath=//input[@id='cstartingprinciplev']", "xpath:attributes"],
+        ["xpath=//table[@id='cstartingamount']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee636ffc-860a-4778-9db6-40a42743b7cc",
+      "comment": "",
+      "command": "type",
+      "target": "id=cstartingprinciplev",
+      "targets": [
+        ["id=cstartingprinciplev", "id"],
+        ["name=cstartingprinciplev", "name"],
+        ["css=#cstartingprinciplev", "css:finder"],
+        ["xpath=//input[@id='cstartingprinciplev']", "xpath:attributes"],
+        ["xpath=//table[@id='cstartingamount']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "52"
+    }, {
+      "id": "a009f203-e35c-4ecd-8dd1-2a74ece5b166",
+      "comment": "",
+      "command": "click",
+      "target": "id=cyearsv",
+      "targets": [
+        ["id=cyearsv", "id"],
+        ["name=cyearsv", "name"],
+        ["css=#cyearsv", "css:finder"],
+        ["xpath=//input[@id='cyearsv']", "xpath:attributes"],
+        ["xpath=//table[@id='cinvestlength']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35cb4714-801e-4f4a-93f7-0365457c4b0a",
+      "comment": "",
+      "command": "type",
+      "target": "id=cyearsv",
+      "targets": [
+        ["id=cyearsv", "id"],
+        ["name=cyearsv", "name"],
+        ["css=#cyearsv", "css:finder"],
+        ["xpath=//input[@id='cyearsv']", "xpath:attributes"],
+        ["xpath=//table[@id='cinvestlength']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "4a2d4d03-e032-49e9-9768-a05f001d4241",
+      "comment": "",
+      "command": "click",
+      "target": "id=cinterestratev",
+      "targets": [
+        ["id=cinterestratev", "id"],
+        ["name=cinterestratev", "name"],
+        ["css=#cinterestratev", "css:finder"],
+        ["xpath=//input[@id='cinterestratev']", "xpath:attributes"],
+        ["xpath=//table[@id='creturnrate']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[4]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee11a75d-c1a8-4897-b22b-81b7914af996",
+      "comment": "",
+      "command": "type",
+      "target": "id=cinterestratev",
+      "targets": [
+        ["id=cinterestratev", "id"],
+        ["name=cinterestratev", "name"],
+        ["css=#cinterestratev", "css:finder"],
+        ["xpath=//input[@id='cinterestratev']", "xpath:attributes"],
+        ["xpath=//table[@id='creturnrate']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[4]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "25"
+    }, {
+      "id": "f1ce0bb8-783e-4455-b820-2cb603041af7",
+      "comment": "",
+      "command": "click",
+      "target": "id=ccompound",
+      "targets": [
+        ["id=ccompound", "id"],
+        ["name=ccompound", "name"],
+        ["css=#ccompound", "css:finder"],
+        ["xpath=//select[@id='ccompound']", "xpath:attributes"],
+        ["xpath=//table[@id='creturnrate']/tbody/tr[2]/td[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cf4e6fb-6422-4cec-ac80-8793ba25d52c",
+      "comment": "",
+      "command": "select",
+      "target": "id=ccompound",
+      "targets": [],
+      "value": "label=monthly"
+    }, {
+      "id": "844c981d-d9e9-48f8-8d9a-b2a4e974d9c3",
+      "comment": "",
+      "command": "click",
+      "target": "id=ccontributeamountv",
+      "targets": [
+        ["id=ccontributeamountv", "id"],
+        ["name=ccontributeamountv", "name"],
+        ["css=#ccontributeamountv", "css:finder"],
+        ["xpath=//input[@id='ccontributeamountv']", "xpath:attributes"],
+        ["xpath=//table[@id='ccontributeamount']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[5]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "069a459f-b831-4457-bf50-27b78eda38c3",
+      "comment": "",
+      "command": "type",
+      "target": "id=ccontributeamountv",
+      "targets": [
+        ["id=ccontributeamountv", "id"],
+        ["name=ccontributeamountv", "name"],
+        ["css=#ccontributeamountv", "css:finder"],
+        ["xpath=//input[@id='ccontributeamountv']", "xpath:attributes"],
+        ["xpath=//table[@id='ccontributeamount']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[5]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "d8a018b1-6955-4333-aa67-f8c9b17d05a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cbcontainer:nth-child(1) > .rbmark",
+      "targets": [
+        ["css=.cbcontainer:nth-child(1) > .rbmark", "css:finder"],
+        ["xpath=//table[@id='cperiod']/tbody/tr/td/label/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9f4dfb6-cf76-416f-8222-95670e88c718",
+      "comment": "",
+      "command": "click",
+      "target": "name=x",
+      "targets": [
+        ["name=x", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='x']", "xpath:attributes"],
+        ["xpath=//table[@id='cperiod']/tbody/tr[2]/td/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99a64365-b837-4774-b6bf-699cfbbc1c59",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=table:nth-child(2) td:nth-child(2) > b",
+      "targets": [
+        ["css=table:nth-child(2) td:nth-child(2) > b", "css:finder"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td[3]/table/tbody/tr/td[2]/b", "xpath:idRelative"],
+        ["xpath=//td[2]/b", "xpath:position"],
+        ["xpath=//b[contains(.,'$30,186,340,742,709.63')]", "xpath:innerText"]
+      ],
+      "value": "balance"
+    }]
+  }],
+  "suites": [{
+    "id": "6acadb3c-a8cb-4d7f-a916-317665a64a7b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8edc8904-3d18-4471-af42-2d0e30007e68"]
+  }],
+  "urls": ["https://www.calculator.net/investment-calculator.html"],
+  "plugins": []
+}

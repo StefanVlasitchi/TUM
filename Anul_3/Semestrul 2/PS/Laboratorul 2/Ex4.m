@@ -1,0 +1,11 @@
+t=0:0.01:2;
+d = 0:0.5:2;
+offset = 1;
+yl=-2*pulstran(t,d,'tripuls',0.5) + offset;
+figure;
+plot(t,yl);
+title('Semnal triunghiular');
+xlabel('Timpul t (s)');
+ylabel('Amplitudinea');
+axis([0 2 -1 1]);
+grid;
